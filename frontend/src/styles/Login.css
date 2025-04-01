@@ -1,0 +1,81 @@
+.login-page,.signin-page{
+  height:100vh;
+  background-image:url(../src/assets/mobile_login_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+.login-box,.signin-box{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(251, 251, 251, 0.07);
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.286);
+  border: 1px solid rgba(255, 255, 255, 0.773);
+}
+:is(.login-box,.signin-box) label{
+  display: block;
+  font-size: 0.9rem;
+}
+:is(.login-box,.signin-box) form{
+  display: grid;
+  gap: 0.5rem;
+}
+:is(.login-box,.signin-box) input:not([type="checkbox"]){
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #d9d7d7;
+  background:rgba(255, 255, 255, 0.599);
+  border-radius: 6px;
+  outline: none;
+  margin-top: 0.3rem;
+  &::placeholder{
+      color: rgb(42, 42, 42);
+  }
+}
+.check{
+  justify-self: end;
+  display: flex;
+  gap: 0.3rem;
+  outline: none;
+  border: none;
+}
+:is(.signin-box,.login-box) a{
+  font-size: 0.8rem;
+  color:rgb(43, 32, 245);
+}
+:is(.signin-box,.login-box) .btns{
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  &>button{
+      flex: 1;
+      background-color:white;
+      padding: 0.5rem;
+      border-radius: 4px;
+  }
+}
+
+:is(.signin-box,.login-box) button.active{
+  background: rgb(45, 45, 241);
+  color: white;
+}
+#roles{
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.599);
+  border: none;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 900px){
+  .login-page,.signin-page{
+    background-image: url(../src/assets/pc_login_bg.jpg);
+    background-size:cover;
+    background-position: top left;
+  }
+}

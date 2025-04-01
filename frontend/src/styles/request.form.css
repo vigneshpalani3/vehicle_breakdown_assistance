@@ -1,0 +1,48 @@
+.request-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/form-bg-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.request-form-container{
+    padding: 1.2rem;
+    border-radius: 6px;
+    box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(10px);
+    &>h1{
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
+.request-form{
+    display: flex;
+    flex-direction: column;
+    gap:0.75rem;
+    & label{
+        display: block;
+        font-size: 0.9rem;
+    }
+    & input{
+        padding: 0.5rem;
+        width: 250px;
+        border: none;
+        border-bottom: 2px solid rgb(8, 101, 182);
+        outline: none;
+        background:none ;
+    }
+    &>button{
+        margin-top: 1rem;
+        background-color: rgb(64, 64, 241);
+        align-self: center;
+        padding: 0.6rem 2.5rem;
+        border-radius: 4px;
+        color: white;
+        &:hover{
+            background-color: rgb(43, 43, 168);
+        }
+    }
+}

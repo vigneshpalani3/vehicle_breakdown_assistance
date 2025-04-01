@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+button{
+    border: none;
+    background: none;
+    cursor:pointer;
+}
+.map-container{
+    width:clamp(450px,90vw,700px);
+    height:90vh;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    translate: -50% -50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.location-submit-btn{
+    background: rgb(21, 173, 21);
+    padding: 6px 24px;
+    display: block;
+    margin-left:auto ;
+    border-radius: 8px;
+    color: white;
+}
+.side-nav{
+    display: none;
+    background: rgb(255, 255, 255);
+    width:fit-content;
+    position: absolute;
+    margin: 0.5rem;
+    border-radius:4px;
+    padding: 0.3rem;
+    box-shadow: 2px 2px 0 ;
+    border: 1px solid rgba(0, 0, 0, 0.877);
+    cursor: pointer;
+    &.active{
+        display: block;
+    }
+    & ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        &>li{
+            padding: 0.5rem;
+            &:not(:last-of-type){
+                border-bottom: 1px solid rgba(0, 0, 0, 0.555);
+            }
+        }
+    }
+}

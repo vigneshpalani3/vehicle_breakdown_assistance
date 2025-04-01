@@ -1,0 +1,60 @@
+.my-requests-page{
+    padding: 1rem;
+    min-height: 90vh;
+    &>h1{
+        font-size: 1.4rem;
+    }
+}
+
+.requests-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    &>div{
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 0 10px #00000091;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        &>h3{
+            border-bottom: 2px solid orangered;
+            padding: 6px;
+            margin-bottom: 0.3rem;
+            border-radius: 4px;
+        }
+    }
+}
+
+.make,
+.name,
+.model,
+.created-date,
+.created-time,
+.status{
+    font-size: 0.9rem;
+    margin-inline: 6px;
+}
+
+.status{
+    align-self: flex-end;
+    padding: 8px 14px;
+    font-weight: 500;
+    color: white;
+    border-radius:4px ;
+    box-shadow: 3px 3px 0 black;
+    &.pending{
+        background: rgb(243, 106, 2);
+    }
+    &.assisted{
+        background: rgb(36, 36, 253);
+    }
+    &.accepted{
+        background: green;
+    }
+    &.rejected{
+        background: rgb(245, 3, 3);
+    }
+}
