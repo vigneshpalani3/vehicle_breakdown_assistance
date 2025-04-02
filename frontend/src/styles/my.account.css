@@ -67,3 +67,12 @@
         color: rgb(132, 0, 0);
     }
 }
+
+.main-page{
+    width: min(100%,1100px);
+    margin-inline: auto;
+    background-color: white;
+}
+body{
+    background-color: rgb(41, 41, 41);
+}
